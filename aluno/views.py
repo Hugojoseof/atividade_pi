@@ -2,7 +2,7 @@ from django.shortcuts import render,get_object_or_404,redirect
 from .models import Aluno,Curso,Cidade
 from .forms import AlunoForm
 
-def aluno_editar(request,id=id):
+def aluno_editar(request,id):
     aluno = get_object_or_404(Aluno,id=id)
    
     if request.method == 'POST':
