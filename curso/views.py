@@ -19,8 +19,8 @@ def curso_editar(request,id):
 
 
 def curso_remover(request, id):
-    Curso = get_object_or_404(Curso, id=id)
-    Curso.delete()
+    curso = get_object_or_404( Curso, id=id)
+    curso.delete()
     return redirect('curso_listar') 
 
 def curso_criar(request):

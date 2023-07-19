@@ -18,7 +18,7 @@ def cidade_editar(request,id):
 
 
 def cidade_remover(request, id):
-    cidade = get_object_or_404(cidade, id=id)
+    cidade = get_object_or_404(Cidade, id=id)
     cidade.delete()
     return redirect('cidade_listar')
 
